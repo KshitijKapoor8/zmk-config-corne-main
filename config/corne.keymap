@@ -179,10 +179,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp W             &kp L        &kp Y                &kp P              &kp B        &kp F      &kp J               &kp O                 &kp U             &kp SEMICOLON     &kp ESCAPE
-&kp LCTRL  &hml LEFT_META C  &hml LALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M      &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI A  &kp SQT
-&kp LSHFT  &kp Q             &kp Z        &kp V                &kp D              &kp K        &kp X      &kp H               &kp SLASH             &kp COMMA         &kp PERIOD        &key_repeat
-                                          &lt 3 LEFT_ALT       &mo 1              &kp SPACE    &kp ENTER  &lt 4 BACKSPACE     &lt 2 LEFT_GUI
+&kp TAB    &kp Q             &kp W        &kp E                &kp R              &kp T        &kp Y      &kp U               &kp I                 &kp O                     &kp P             &kp ESCAPE
+&kp LCTRL  &hml LEFT_META A  &hml LALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G        &kp J      &hmr RIGHT_SHIFT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_ALT SEMICOLON  &hmr RIGHT_GUI A  &kp SQT
+&kp LSHFT  &kp Z             &kp X        &kp C                &kp V              &kp B        &kp N      &kp M               &kp COMMA             &kp PERIOD                &kp PERIOD        &key_repeat
+                                          &lt 3 LEFT_ALT       &mo 1              &kp ENTER    &kp SPACE  &lt 4 BACKSPACE     &lt 2 LEFT_GUI
             >;
         };
 
@@ -251,17 +251,6 @@
             >;
 
             label = "WM";
-        };
-
-        android {
-            bindings = <
-&trans  &trans  &trans             &kp LA(LS(LEFT_ARROW))  &kp LA(LS(RIGHT))  &trans                          &trans           &trans        &kp LC(LS(LA(ENTER)))          &trans  &trans  &trans
-&trans  &trans  &kp LC(SEMICOLON)  &kp LC(LA(B))           &kp LA(ENTER)      &kp LC(LS(NON_US_BACKSLASH))    &kp LS(LC(SQT))  &kp LA(LEFT)  &kp LA(RIGHT)                  &trans  &trans  &trans
-&trans  &trans  &trans             &kp LC(LS(GRAVE))       &kp LC(LS(F1))     &kp LA(LS(F10))                 &kp LS(LA(F9))   &trans        &kp LS(LA(LC(RIGHT_BRACKET)))  &trans  &trans  &trans
-                                   &trans                  &trans             &trans                          &trans           &trans        &trans
-            >;
-
-            label = "DROID";
         };
     };
 
