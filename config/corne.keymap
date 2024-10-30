@@ -300,10 +300,10 @@
 
         wm {
             bindings = <
-&trans  &trans  &wm_7  &trans  &kp LS(LA(Q))  &kp LS(LG(SPACE))    &trans     &sk LS(LEFT_ALT)    &trans         &trans     &trans                 &trans
-&trans  &trans  &wm_4  &wm_5   &wm_6          &kp LA(SPACE)        &kp LA(H)  &kp LA(J)           &kp LA(K)      &kp LA(L)  &kp LA(LS(SEMICOLON))  &trans
-&trans  &trans  &wm_1  &wm_2   &wm_3          &trans               &trans     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &trans     &trans                 &trans
-                       &trans  &trans         &trans               &trans     &trans              &trans
+&trans          &trans  &wm_7  &wm_b   &kp LS(LA(Q))  &kp LS(LG(SPACE))    &trans     &sk LS(LEFT_ALT)    &trans         &trans     &trans                 &trans
+&trans          &trans  &wm_4  &wm_5   &wm_6          &kp LA(SPACE)        &kp LA(H)  &kp LA(J)           &kp LA(K)      &kp LA(L)  &kp LA(LS(SEMICOLON))  &trans
+&kp LEFT_SHIFT  &trans  &wm_1  &wm_2   &wm_3          &trans               &trans     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &trans     &trans                 &trans
+                               &trans  &trans         &trans               &trans     &trans              &trans
             >;
 
             label = "WM";
@@ -312,11 +312,6 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        glaze-wm {
-            if-layers = <2 4>;
-            then-layer = <5>;
-        };
 
         android-shortcuts {
             if-layers = <1 3>;
