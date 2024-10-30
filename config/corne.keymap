@@ -36,6 +36,62 @@
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        wm_1: wm_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_1";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_1)>, <&kp LA(LS(NUMBER_1))>;
+        };
+
+        wm_2: wm_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_2";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_2)>, <&kp LA(LS(NUMBER_2))>;
+        };
+
+        wm_3: wm_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_3";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_3)>, <&kp LA(LS(NUMBER_3))>;
+        };
+
+        wm_4: wm_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_4";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_4)>, <&kp LA(LS(NUMBER_4))>;
+        };
+
+        wm_5: wm_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_5";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_5)>, <&kp LA(LS(N5))>;
+        };
+
+        wm_6: wm_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_6";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_6)>, <&kp LA(LS(NUMBER_6))>;
+        };
+
+        wm_7: wm_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_7";
+            #binding-cells = <0>;
+            bindings = <&kp LA(N7)>, <&kp LA(LS(N7))>;
+        };
+
+        wm_b: wm_b {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WM_B";
+            #binding-cells = <0>;
+            bindings = <&kp LA(B)>, <&kp LA(LS(B))>;
+        };
     };
 
     combos {
@@ -244,10 +300,10 @@
 
         wm {
             bindings = <
-&trans  &trans  &trans            &trans            &kp LS(LA(Q))     &trans           &trans             &sk LS(LEFT_ALT)    &trans         &trans            &trans  &trans
-&trans  &trans  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(NUMBER_3)  &kp LA(SPACE)    &kp LA(LS(SPACE))  &kp LA(NUMBER_4)    &kp LA(N5)     &kp LA(NUMBER_6)  &trans  &trans
-&trans  &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans           &trans             &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &trans            &trans  &trans
-                                  &trans            &trans            &trans           &trans             &trans              &trans
+&trans  &trans  &wm_7  &trans  &kp LS(LA(Q))  &kp LS(LG(SPACE))    &trans     &sk LS(LEFT_ALT)    &trans         &trans     &trans                 &trans
+&trans  &trans  &wm_4  &wm_5   &wm_6          &kp LA(SPACE)        &kp LA(H)  &kp LA(J)           &kp LA(K)      &kp LA(L)  &kp LA(LS(SEMICOLON))  &trans
+&trans  &trans  &wm_1  &wm_2   &wm_3          &trans               &trans     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &trans     &trans                 &trans
+                       &trans  &trans         &trans               &trans     &trans              &trans
             >;
 
             label = "WM";
